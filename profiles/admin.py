@@ -1,4 +1,6 @@
-from django.contrib import admin
-from .models import Profile
+from django.apps import AppConfig
 
-admin.site.register(Profile)
+
+class ProfilesConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'profiles'
